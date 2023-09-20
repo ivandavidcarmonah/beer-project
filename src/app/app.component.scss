@@ -1,0 +1,42 @@
+
+img{
+    object-fit: cover;
+    object-position: bottom;
+}
+@media screen and (max-width: 832) {
+    .result-item{
+        .img-thumbnail {
+            display: none;
+        }
+    }
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   width: 100%;
+}
+
+.pointer{ cursor: pointer;}
+.dataTable-top {
+    display: flex;
+    justify-content: space-between;
+    &::after {
+      content: none;
+    }
+    .dataTable-dropdown {
+      label {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        select {
+          margin-right: 10px;
+        }
+      }
+    }
+   
+  }
+
+  
+  

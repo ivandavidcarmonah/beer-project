@@ -24,13 +24,23 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              {
+                "glob": "*.svg",
+                "input": "node_modules/bootstrap-icons/",
+                "output": "/"
+              },
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -103,5 +113,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "7ec7ba7d-81e8-456b-9499-32ef4c2f2651"
   }
 }
