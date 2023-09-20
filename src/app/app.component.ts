@@ -54,15 +54,5 @@ export class AppComponent {
     const dataInput = $event.currentTarget as HTMLInputElement;
     this.beerShearch.next(dataInput.value)
   }
-  dataList (){
-   
-  }
-
-  filterBeers(){
-    
-  }
-
-  onChange(event: any){
-
-  }
+ 
 }
